@@ -14,9 +14,9 @@
   var btn = document.getElementById('btn');
 
   btn.addEventListener('click', function() {
-
-      window.confirm('クリックされました！');
-
+      setTimeout(() => {
+        window.confirm('クリックされました！');
+      }, 30000);
   })
   </script>
 </body>
