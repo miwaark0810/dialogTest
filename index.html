@@ -8,12 +8,12 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <button id="btn">ボタン</button>
-
+  <button id="btn1">ダイアログが出るボタン</button>
+  <button id="btn2">何も起きないボタン</button>
   <script>
   var btn = document.getElementById('btn');
 
-  btn.addEventListener('click', function() {
+  btn1.addEventListener('click', function() {
       setTimeout(() => {
         window.confirm('クリックされました！');
       }, 10000);
