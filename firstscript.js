@@ -8,7 +8,7 @@ async function myAsyncFunction(){
     //Do what you want here 
     console.log("Before the delay")
 
-    await delay(5);
+    await delay(15);
 
     console.log("After the delay")
     //Do what you want here too
