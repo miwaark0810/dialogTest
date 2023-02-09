@@ -1,16 +1,18 @@
-console.log("テスト")
-// const sleep = waitTime => new Promise( resolve => setTimeout(resolve, waitTime) );
-// const aFunc = async function(){
+function delay(n){
+    return new Promise(function(resolve){
+        setTimeout(resolve,n*1000);
+    });
+}
 
-//     console.log("1回目")
+async function myAsyncFunction(){
+    //Do what you want here 
+    console.log("Before the delay")
 
-//     await sleep( 3000 );
+    await delay(5);
 
-//     console.log("2回目")
+    console.log("After the delay")
+    //Do what you want here too
 
-//     await sleep( 1000 );
-  
-//     console.log("終わり")
+}
 
-// }
-// console.log(aFunc);
+myAsyncFunction();
