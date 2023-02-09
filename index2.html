@@ -1,8 +1,5 @@
 <html>
 <head>
-<script>
-sleep(5000);
-</script>
 <title>HTML文書の例</title>
 ＨＴＭＬ文書の情報はここに書きます。
 </head>
@@ -18,5 +15,10 @@ sleep(5000);
 <center><marquee width=300 bgcolor="#ffffff">
 私のホームページへようこそ！！
 </marquee></center>
+document.addEventListener('DOMContentLoaded', (event) => {
+setTimeout(() => {
+  console.log("Delayed for 1 second.");
+}, "1000")
+});
 </body>
 </html>
