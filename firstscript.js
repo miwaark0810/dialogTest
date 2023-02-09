@@ -12,4 +12,4 @@ const aFunc = async function(){
     console.log("終わり")
 
 }
-aFunc();
+console.log(aFunc);
