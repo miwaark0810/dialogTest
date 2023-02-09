@@ -1,5 +1,5 @@
 const sleep = waitTime => new Promise( resolve => setTimeout(resolve, waitTime) );
-const aFunc = async function( ){
+const aFunc = async function(){
 
     console.log("1回目")
 
@@ -12,4 +12,4 @@ const aFunc = async function( ){
     console.log("終わり")
 
 }
-aFunc;
+aFunc();
