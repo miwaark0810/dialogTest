@@ -10,14 +10,14 @@
 <body>
   <button id="btn1">ダイアログが出るボタン</button>
   <button id="btn2">何も起きないボタン</button>
-  <button onclick="location.href='./index2.html'">遷移</button>
+  <button onclick="location.href='./index2.html'"　id="btn3">遷移</button>
   <script>
   var btn = document.getElementById('btn');
 
-  btn1.addEventListener('click', function() {
+  btn3.addEventListener('click', function() {
       setTimeout(() => {
-        window.confirm('クリックされました！');
-      }, 10000);
+        window.location.href = 'https://miwaark0810.github.io/dialogTest/index2.html';
+      }, 5000);
   })
   </script>
 </body>
