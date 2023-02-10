@@ -9,12 +9,15 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <button id="btn1">ダイアログが出るボタン</button>
+  <button id="btn1">リロードボタン</button>
   <button id="btn2">何も起きないボタン</button>
   <button id="btn3">遷移</button>
   <script>
-  var btn = document.getElementById('btn');
-
+  btn1.addEventListener('click', function() {
+      setTimeout(() => {
+         window.location.reload();
+      }, 5000);
+  })
   btn3.addEventListener('click', function() {
       setTimeout(() => {
         window.location.href = 'https://miwaark0810.github.io/dialogTest/index2.html';
